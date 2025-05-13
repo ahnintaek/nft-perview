@@ -15,7 +15,7 @@ function App() {
         </div>
         <img src={nftimg} alt="nftimg" className="NftImage" />
       </div>
-      <h3 className="Title hover-highlight">Equilibrium Classic #3429</h3>
+      <h3 className="Title hover-highlight">Equilibrium #3429</h3>
       <div className="Description">Our Equilibrium collection promotes balance and calm</div>
       <div className="flex-space-between flex-row">
         <p className="Nftname"><img src={ethereum} className="NftNameImg"/>0.041 ETH</p>
