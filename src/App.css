@@ -1,0 +1,105 @@
+:root {
+  --Blue500: hsl(215, 51%, 70%);
+  --Cyan400: hsl(178, 100%, 50%);
+  --Cyan400_back: hsla(178, 100%, 50%, 60%);
+
+  --Blue950: hsl(217, 54%, 11%); /*main*/
+  --Blue900: hsl(216, 50%, 16%); /*card*/
+  --Blue800: hsl(215, 32%, 27%); /*line*/
+  --White: hsl(0, 0%, 100%);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+body {
+  font-size: 18px;
+  font-family: 'Outfit', sans-serif;
+  background-color: var(--Blue950);
+  max-width: 1440px;
+  width: 100%;
+  height: 100vh;
+  align-content: center;
+  justify-items: center;
+  margin: 0 auto;
+}
+.Card {
+  background-color: var(--Blue900);
+  border: 1px solid var(--Blue800);
+  padding: 20px;
+  width: 300px;
+  border-radius: 15px;
+  position: relative;
+}
+.ImageOverlay {
+  background-color: var(--Cyan400_back);
+  width: 300px;
+  height: 300px;
+  border-radius: 15px;
+  line-height: 300px;
+  text-align: center;
+  position: absolute;
+  display: none;
+}
+.ImageContainer:hover .ImageOverlay {
+  cursor: pointer;
+  display: block;
+}
+.ViewIcon {
+  color: var(--White);
+  opacity: 1;
+}
+.NftImage {
+  width: 300px;
+  height: 300px;
+  border-radius: 15px;
+}
+.Title {
+  color: var(--White);
+  font-weight: 600;
+}
+.Description {
+  color: var(--Blue500);
+  font-weight: 300;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+.flex-space-between {
+  justify-content: space-between;
+}
+.NftNameImg,.ClockImage {
+  padding-right: 5px;
+}
+.Nftname {
+  color: var(--Cyan400);
+  line-height: 15px;
+}
+.Clock {
+  color: var(--Blue500);
+  font-weight: 300;
+}
+hr {
+  border: 1px solid var(--Blue500);
+  margin: 10px auto;
+}
+.CreatorSection {
+  line-height: 30px;
+  margin-top: 20px;
+}
+.avatar {
+  border: 1px solid var(--White);
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+}
+.Name {
+  color: var(--White);
+}
+.hover-highlight:hover {
+  color: var(--Cyan400);
+  cursor: pointer;
+}
+.CreatorSection p {
+  margin: 0 5px;
+}
